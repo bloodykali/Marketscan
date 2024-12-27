@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4285f4;
+    --secondary-color: #34a853;
+    --background-color: #f8f9fa;
+    --text-color: #202124;
+}
+
+body {
+    width: 380px;
+    padding: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.title {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #4dabf7;
+}
+
+.btn-primary {
+    flex: 1;
+    padding: 10px 16px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #3367d6;
+}
+
+.results-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.result-item {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.price {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.store {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.select-styled {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.select-styled:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-secondary {
+    flex: 1;
+    padding: 10px 16px;
+    background: #e0e0e0;
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+    background: #d0d0d0;
+}
+
+#loading {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+.price-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 4px;
+    transition: border-color 0.2s;
+}
+
+.price-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.price-inputs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.price-input {
+    flex: 1;
+    background-color: white;
+    color: var(--text-color);
+    cursor: text;
+}

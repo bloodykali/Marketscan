@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketScan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.png" class="logo" alt="MarketScan Logo">
+            <h1>MarketScan</h1>
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" class="select-styled">
+                <option value="">Select Category</option>
+                <option value="computers">Computers & PCs</option>
+                <option value="mobile phones">Mobile Phones</option>
+                <option value="watches">Watches</option>
+                <option value="beauty">Beauty & Cosmetics</option>
+                <option value="apparel">Apparel</option>
+                <option value="electronics">Electronics</option>
+                <option value="family">Family</option>
+                <option value="free stuff">Free Stuff</option>
+                <option value="gaming accessories">Gaming Accessories</option>
+                <option value="garden outdoor">Garden & Outdoor</option>
+                <option value="hobbies">Hobbies</option>
+                <option value="home goods">Home Goods</option>
+                <option value="home improvement supplies">Home Improvement</option>
+                <option value="miscellaneous">Miscellaneous</option>
+                <option value="musical instruments">Musical Instruments</option>
+                <option value="office supplies">Office Supplies</option>
+                <option value="pet supplies">Pet Supplies</option>
+                <option value="photography video accessories">Photography & Video</option>
+                <option value="property rentals">Property Rentals</option>
+                <option value="smart home accessories">Smart Home</option>
+                <option value="sporting goods">Sporting Goods</option>
+                <option value="toys games">Toys & Games</option>
+                <option value="vehicles">Vehicles</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="subcategory">Subcategory:</label>
+            <select id="subcategory" class="select-styled">
+                <option value="">Select Subcategory</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="keyword">Keyword (Optional):</label>
+            <select id="keyword" class="select-styled">
+                <option value="">Any Keyword</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="priceRange">Price Range (Optional):</label>
+            <div class="price-inputs">
+                <input type="number" id="minPrice" class="price-input" placeholder="Min price" min="0">
+                <input type="number" id="maxPrice" class="price-input" placeholder="Max price">
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="searchButton" class="btn-primary">Search</button>
+            <button id="clearButton" class="btn-secondary">Clear</button>
+        </div>
+        <div id="loading" style="display: none;">Searching...</div>
+        <div class="results-container" id="results"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
